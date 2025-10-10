@@ -233,6 +233,17 @@ const struct Tileset gTileset_Building =
     .callback = InitTilesetAnim_Building,
 };
 
+const struct Tileset gTileset_Building_Contest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InsideBuilding_Contest,
+    .palettes = gTilesetPalettes_InsideBuilding_Contest,
+    .metatiles = gMetatiles_InsideBuilding_Contest,
+    .metatileAttributes = gMetatileAttributes_InsideBuilding_Contest,
+    .callback = InitTilesetAnim_Building,
+};
+
 const struct Tileset gTileset_Building_TrainerHill =
 {
     .isCompressed = TRUE,
