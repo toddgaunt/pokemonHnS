@@ -1329,8 +1329,8 @@
 #define FLAG_DEFEATED_BLACKTHORN_GYM                                0x4F7
 #define FLAG_DEFEATED_RED                                           0x4F8
 
-#define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
-#define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
+#define FLAG_VISITED_BATTLE_FRONTIER                                0x4F9
+#define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT              0x4FA // Unused Flag
 
 #define FLAG_DEFEATED_ELITE_4_WILL                                  0x4FB
 #define FLAG_DEFEATED_ELITE_4_KOGA                                  0x4FC
