@@ -243,6 +243,7 @@ gScriptCmdTable::
 	.4byte ScrCmd_givebp							@ 0xf0
 	.4byte ScrCmd_dynmultichoice                    @ 0xf1 From Modern Emerald 2.3.3
 	.4byte ScrCmd_dynmultipush                      @ 0xf2 From Modern Emerald 2.3.3
+	.4byte ScrCmd_buffermoncategory                 @ 0xf3 needed for random starters
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

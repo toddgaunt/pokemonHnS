@@ -1868,6 +1868,12 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
+	.macro buffermoncategory stringVarId:req, species:req
+	.byte 0xf3
+	stringvar \stringVarId
+	.2byte \species
+	.endm
+
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req

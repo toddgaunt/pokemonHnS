@@ -1647,6 +1647,14 @@ bool8 ScrCmd_showmonpic(struct ScriptContext *ctx)
     u8 x = ScriptReadByte(ctx);
     u8 y = ScriptReadByte(ctx);
 
+    // Needed for starter randomization
+    if (((gSaveBlock1Ptr->tx_Random_Starter) == 1) && (FlagGet(FLAG_SYS_POKEMON_GET) == FALSE) ||
+        IsOneTypeChallengeActive() && (FlagGet(FLAG_SYS_POKEMON_GET) == FALSE))
+    {
+        // copies random starter species into VAR_TEMP_2
+        species = GetStarterPokemon(VarGet(VAR_STARTER_MON));
+        VarSet(VAR_TEMP_2, species);
+    }
     ScriptMenu_ShowPokemonPic(species, x, y);
     return FALSE;
 }
@@ -1750,6 +1758,18 @@ bool8 ScrCmd_bufferspeciesname(struct ScriptContext *ctx)
     u16 species = VarGet(ScriptReadHalfword(ctx)) & ((1 << 10) - 1); // ignore possible shiny / form bits
 
     StringCopy(sScriptStringVars[stringVarIndex], gSpeciesNames[species]);
+    return FALSE;
+}
+
+//Needed for starter randomization
+bool8 ScrCmd_buffermoncategory(struct ScriptContext *ctx)
+{
+    u8 stringVarIndex = ScriptReadByte(ctx);
+    u16 species = VarGet(ScriptReadHalfword(ctx));
+
+    species = GetStarterPokemon(VarGet(VAR_STARTER_MON));
+    VarSet(VAR_TEMP_2, species);
+    StringCopy(sScriptStringVars[stringVarIndex], GetPokedexCategoryName(SpeciesToNationalPokedexNum(species)));
     return FALSE;
 }
 
