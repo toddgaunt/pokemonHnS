@@ -23,7 +23,7 @@ MauvilleCity_GameCorner_EventScript_CoinsClerk::
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NeedCoinCase
 	checkcoins VAR_TEMP_1
-	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1 - 50), MauvilleCity_GameCorner_EventScript_NoRoomFor50Coins
+	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1 - 50), MauvilleCity_GameCorner_EventScript_NoRoomFor50CoinsBeginning
 	checkmoney COINS_PRICE_50
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NotEnoughMoneyBeginning
 	message MauvilleCity_GameCorner_Text_WereYouLookingForCoins
@@ -169,7 +169,6 @@ MauvilleCity_GameCorner_EventScript_NeedCoinCase::
 
 MauvilleCity_GameCorner_EventScript_NotEnoughMoneyBeginning::
 	msgbox MauvilleCity_GameCorner_Text_DontHaveEnoughMoneyFor50, MSGBOX_DEFAULT
-	clearflag FLAG_TEMP_2
 	release
 	end
 
@@ -202,6 +201,11 @@ MauvilleCity_GameCorner_EventScript_ThanksBuyCoins::
 	clearflag FLAG_TEMP_2
 	hidemoneybox
 	hidecoinsbox 0, 5
+	release
+	end
+
+MauvilleCity_GameCorner_EventScript_NoRoomFor50CoinsBeginning::
+	msgbox MauvilleCity_GameCorner_Text_NoRoomFor50Coins, MSGBOX_DEFAULT
 	release
 	end
 
