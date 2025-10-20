@@ -1954,7 +1954,7 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_LATIAS - 1]      = ANIM_SWING_CONCAVE_FAST_SHORT,
     [SPECIES_LATIOS - 1]      = ANIM_V_SHAKE,
     [SPECIES_JIRACHI - 1]     = ANIM_SWING_CONVEX,
-    [SPECIES_DEOXYS - 1]      = ANIM_H_PIVOT,
+    [SPECIES_DEOXYS - 1]      = ANIM_GROW_VIBRATE,
     [SPECIES_CHIMECHO - 1]    = ANIM_H_SLIDE_WOBBLE,
     [SPECIES_ARCEUS - 1]      = ANIM_GROW_VIBRATE,
     [SPECIES_AMBIPOM - 1]     = ANIM_BACK_AND_LUNGE,
@@ -2851,8 +2851,8 @@ static const u8 gSpeciesMapping[NUM_SPECIES+1] =
     [SPECIES_FARIGIRAF - 1]     = EVO_TYPE_1,
     [SPECIES_DUDUNSPARCE - 1]   = EVO_TYPE_1,
     [SPECIES_WYRDEER - 1] = EVO_TYPE_1,
-    [SPECIES_URSALUNA - 1] = EVO_TYPE_1,
-    [SPECIES_URSALUNA_BLOODMOON - 1] = EVO_TYPE_1,
+    [SPECIES_URSALUNA - 1] = EVO_TYPE_2,
+    [SPECIES_URSALUNA_BLOODMOON - 1] = EVO_TYPE_2,
     [SPECIES_KLEAVOR - 1] = EVO_TYPE_1,
     //[SPECIES_UNUSED_SPACE5 - 1] = EVO_TYPE_LEGENDARY,
     //[SPECIES_UNUSED_SPACE6 - 1] = EVO_TYPE_LEGENDARY,
@@ -2860,9 +2860,9 @@ static const u8 gSpeciesMapping[NUM_SPECIES+1] =
     //[SPECIES_UNUSED_SPACE8 - 1] = EVO_TYPE_LEGENDARY,
     //[SPECIES_UNUSED_SPACE9 - 1] = EVO_TYPE_LEGENDARY,
     //[SPECIES_UNUSED_SPACE10 - 1] = EVO_TYPE_LEGENDARY,
-    [SPECIES_DEOXYS_ATTACK]     = EVO_TYPE_LEGENDARY,
-    [SPECIES_DEOXYS_DEFENSE]    = EVO_TYPE_LEGENDARY,
-    [SPECIES_DEOXYS_SPEED]      = EVO_TYPE_LEGENDARY,
+    //[SPECIES_DEOXYS_ATTACK]     = EVO_TYPE_LEGENDARY,
+    //[SPECIES_DEOXYS_DEFENSE]    = EVO_TYPE_LEGENDARY,
+    //[SPECIES_DEOXYS_SPEED]      = EVO_TYPE_LEGENDARY,
 };
 #define RANDOM_SPECIES_COUNT ARRAY_COUNT(sRandomSpecies)
 static const u16 sRandomSpecies[] =
@@ -3793,9 +3793,9 @@ static const u16 sRandomSpeciesLegendary[] =
     //SPECIES_UNUSED_SPACE8           ,
     //SPECIES_UNUSED_SPACE9           ,
     //SPECIES_UNUSED_SPACE10            ,
-    SPECIES_DEOXYS_ATTACK     ,
-    SPECIES_DEOXYS_DEFENSE    ,
-    SPECIES_DEOXYS_SPEED      ,
+    //SPECIES_DEOXYS_ATTACK     ,
+    //SPECIES_DEOXYS_DEFENSE    ,
+    //SPECIES_DEOXYS_SPEED      ,
 };
 #define RANDOM_SPECIES_EVO_0_COUNT ARRAY_COUNT(sRandomSpeciesEvo0)
 static const u16 sRandomSpeciesEvo0[] =
@@ -4140,8 +4140,6 @@ static const u16 sRandomSpeciesEvo1[] =
     SPECIES_FARIGIRAF         ,
     SPECIES_DUDUNSPARCE       ,
     SPECIES_WYRDEER           ,
-    SPECIES_URSALUNA           ,
-    SPECIES_URSALUNA_BLOODMOON           ,
     SPECIES_KLEAVOR           ,
     //SPECIES_UNUSED_SPACE5           ,
     //SPECIES_UNUSED_SPACE6           ,
@@ -4213,10 +4211,8 @@ static const u16 sRandomSpeciesEvo2[] =
     SPECIES_ROSERADE          ,
     SPECIES_TOGEKISS          ,
     SPECIES_ANNIHILAPE        ,
-    SPECIES_WYRDEER           ,
     SPECIES_URSALUNA           ,
     SPECIES_URSALUNA_BLOODMOON           ,
-    SPECIES_KLEAVOR           ,
     //SPECIES_UNUSED_SPACE5           ,
     //SPECIES_UNUSED_SPACE6           ,
     //SPECIES_UNUSED_SPACE7           ,
@@ -4252,13 +4248,9 @@ static const u16 sRandomSpeciesEvoLegendary[] =
     SPECIES_REGIDRAGO         ,
     SPECIES_REGIELEKI         ,
     SPECIES_REGIGIGAS         ,
-    SPECIES_DEOXYS_ATTACK     ,
-    SPECIES_DEOXYS_DEFENSE    ,
-    SPECIES_DEOXYS_SPEED      ,
-    SPECIES_WYRDEER           ,
-    SPECIES_URSALUNA           ,
-    SPECIES_URSALUNA_BLOODMOON           ,
-    SPECIES_KLEAVOR           ,
+    //SPECIES_DEOXYS_ATTACK     ,
+    //SPECIES_DEOXYS_DEFENSE    ,
+    //SPECIES_DEOXYS_SPEED      ,
     //SPECIES_UNUSED_SPACE5           ,
     //SPECIES_UNUSED_SPACE6           ,
     //SPECIES_UNUSED_SPACE7           ,
@@ -4463,8 +4455,8 @@ const u16 gEvolutionLines[NUM_SPECIES][EVOS_PER_LINE] =
     [SPECIES_GALLADE]                           = {SPECIES_RALTS, SPECIES_KIRLIA, SPECIES_GARDEVOIR, SPECIES_GALLADE},
     [SPECIES_BAGON ... SPECIES_SALAMENCE]       = {SPECIES_BAGON, SPECIES_SHELGON, SPECIES_SALAMENCE},
     [SPECIES_BELDUM ... SPECIES_METAGROSS]      = {SPECIES_BELDUM, SPECIES_METANG, SPECIES_METAGROSS},
-    [SPECIES_DEOXYS]                            = {SPECIES_DEOXYS, SPECIES_DEOXYS_ATTACK, SPECIES_DEOXYS_DEFENSE, SPECIES_DEOXYS_SPEED},
-    [SPECIES_DEOXYS_ATTACK ... SPECIES_DEOXYS_SPEED] = {SPECIES_DEOXYS, SPECIES_DEOXYS_ATTACK, SPECIES_DEOXYS_DEFENSE, SPECIES_DEOXYS_SPEED},
+    //[SPECIES_DEOXYS]                            = {SPECIES_DEOXYS, SPECIES_DEOXYS_ATTACK, SPECIES_DEOXYS_DEFENSE, SPECIES_DEOXYS_SPEED},
+    //[SPECIES_DEOXYS_ATTACK ... SPECIES_DEOXYS_SPEED] = {SPECIES_DEOXYS, SPECIES_DEOXYS_ATTACK, SPECIES_DEOXYS_DEFENSE, SPECIES_DEOXYS_SPEED},
     [SPECIES_CHIMECHO]                          = {SPECIES_CHINGLING, SPECIES_CHIMECHO},
     [SPECIES_CHINGLING]                         = {SPECIES_CHINGLING, SPECIES_CHIMECHO},
     [SPECIES_DUNSPARCE]                         = {SPECIES_DUNSPARCE, SPECIES_DUDUNSPARCE},
@@ -4915,6 +4907,10 @@ void ZeroEnemyPartyMons(void)
 void CreateMon(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId)
 {
     u32 mail;
+    if (gSaveBlock1Ptr->tx_Random_Static)
+    {
+        species = GetSpeciesRandomSeeded(species, TX_RANDOM_T_STATIC, 0);
+    }
     ZeroMonData(mon);
     CreateBoxMon(&mon->box, species, level, fixedIV, hasFixedPersonality, fixedPersonality, otIdType, fixedOtId);
     SetMonData(mon, MON_DATA_LEVEL, &level);
@@ -5032,6 +5028,14 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                     shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
                     rolls++;
                 } while (shinyValue >= 128 && rolls < shinyRolls);   
+        }
+        if (FlagGet(FLAG_FORCE_SHINY))
+        {
+            u8 nature = personality % NUM_NATURES;  // keep current nature
+            do {
+                personality = Random32();
+                personality = ((((Random() % SHINY_ODDS) ^ (HIHALF(value) ^ LOHALF(value))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
+            } while (nature != GetNatureFromPersonality(personality));
         }
     }
 
@@ -5715,6 +5719,9 @@ void CreateEnemyEventMon(void)
     s32 level = gSpecialVar_0x8005;
     s32 itemId = gSpecialVar_0x8006;
 
+    if (gSaveBlock1Ptr->tx_Random_Static)
+        species = GetSpeciesRandomSeeded(species, TX_RANDOM_T_STATIC, 0);
+    
     ZeroEnemyPartyMons();
     CreateEventMon(&gEnemyParty[0], species, level, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     if (itemId)
@@ -6157,7 +6164,7 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon)
             u16 move;
 
             moveLevel = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV);
-            
+
             if (moveLevel == 0)
                 continue;
 
@@ -6612,21 +6619,41 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
                 }
         }
 
-        // Altaria gets faster, and holds a Chesto for the rematches.
-        if ((attacker->species == SPECIES_ALTARIA) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_CHESTO))
+        // Altaria gets faster, and holds a Chesto for the rematches
+        if ((attacker->species == SPECIES_ALTARIA) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_SITRUS))
         {
             attacker->ability = ABILITY_SPEED_BOOST;
         }
+        else if ((attacker->species == SPECIES_ALTARIA) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_CHESTO))
+        {
+
+            attacker->ability = ABILITY_SPEED_BOOST;
+        }
+        // Altaria gests bulkier during the rematches
+        if ((defender->species == SPECIES_ALTARIA) && (defenderHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_CHESTO))
+        {
+            defense = (115 * defense) / 100;
+            spDefense = (115 * spDefense) / 100;
+        }
         
-        // Kingdra gets Drizzle
+        // Kingdra gets a 15% atk and sp.atk boost
         if ((attacker->species == SPECIES_KINGDRA) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_CHESTO))
         {
-            attacker->ability = ABILITY_DRIZZLE;
+            spAttack = (115 * spAttack) / 100;
+            attack = (115 * attack) / 100;
         }
-        // Kingdra gets Drizzle, and Liechi modifier for rematches
+        // Kingdra gets a 20% atk and sp.atk boost for rematches
         else if ((attacker->species == SPECIES_KINGDRA) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_LIECHI))
         {
-            attacker->ability = ABILITY_DRIZZLE;
+            spAttack = (120 * spAttack) / 100;
+            attack = (120 * attack) / 100;
+        }
+
+        // Drake's Salamence gets way stronger and is now a menace, like Goopey
+        if ((attacker->species == SPECIES_SALAMENCE) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_SITRUS))
+        {
+            spAttack = (130 * spAttack) / 100;
+            attack = (130 * attack) / 100;
         }
 
         // Dusknoir gets Levitate
@@ -6639,28 +6666,31 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             attacker->ability = ABILITY_LEVITATE;
         }
         
-        // Whiscash gets Drizzle, and Milotic gets Swift Swim together with Marvel Scale
-        if ((attacker->species == SPECIES_WHISCASH) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER))
+        // Champion: Whiscash gets a 10% def and sp. def boost
+        if ((attacker->species == SPECIES_WHISCASH) && (defenderHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER))
         {
-            attacker->ability = ABILITY_DRIZZLE;
+            defense = (110 * defense) / 100;
+            spDefense = (110 * spDefense) / 100;
         }
+        // Champion: Milotic gets Swift Swim
         if ((attacker->species == SPECIES_MILOTIC) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER))
         {
             attacker->ability = ABILITY_SWIFT_SWIM;
         }
+        // Rematch, now holds leftovers
         else if ((attacker->species == SPECIES_MILOTIC) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_LEFTOVERS))
         {
             attacker->ability = ABILITY_SWIFT_SWIM;
         }
+        // Champion: permanent Marvel Scale, no status needed
         if ((defender->species == SPECIES_MILOTIC) && (defenderHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER))
         {
-            if (defender->status1)
-                defense = (150 * defense) / 100;
+            defense = (150 * defense) / 100;
         }
+        // Rematch, now holds leftovers
         else if ((defender->species == SPECIES_MILOTIC) && (defenderHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_LEFTOVERS))
         {
-            if (defender->status1)
-                defense = (150 * defense) / 100;
+            defense = (150 * defense) / 100;
         }
         
         // Solrock and Lunatone get a 15% dmg boost if they are together on the field, and a Sitrus berry.
@@ -6672,10 +6702,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         {
             spAttack = (115 * spAttack) / 100;
         }
-        // Lunatone with chesto for rematches
+        // Lunatone with chesto for rematches, +5% extra sp.atk
         else if (attacker->species == SPECIES_LUNATONE && ((ABILITY_ON_FIELD2(ABILITY_LEVITATE)) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER_CHESTO)))
         {
-            spAttack = (115 * spAttack) / 100;
+            spAttack = (120 * spAttack) / 100;
         }
     }
         
@@ -6703,6 +6733,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if ((attacker->species == SPECIES_SPINDA) && ((Random() % 100) <= 2))
         gBattleMovePower = (200 * gBattleMovePower) / 100;
+    //if ((attacker->species == SPECIES_GROUDON) && (moveType == TYPE_FIRE))
+    //    gBattleMovePower = (150 * gBattleMovePower) / 100;
 
     // Self-destruct / Explosion cut defense in half
     if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
@@ -8184,7 +8216,7 @@ u8 GetAbilityBySpecies(u16 species, u8 abilityNum)
             || species == SPECIES_ZAPDOS 
             || species == SPECIES_MOLTRES
             || species == SPECIES_MEWTWO
-            || species == SPECIES_RAICHU
+            || species == SPECIES_RAIKOU
             || species == SPECIES_ENTEI
             || species == SPECIES_SUICUNE
             || species == SPECIES_HO_OH
@@ -10554,11 +10586,11 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
             if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 0)
-                return MUS_VS_FRONTIER_BRAIN;
+                return MUS_HG_VS_FRONTIER_BRAIN;
             else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 1)
-                return MUS_VS_FRONTIER_BRAIN;
+                return MUS_HG_VS_FRONTIER_BRAIN;
             else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 2)
-                return MUS_PL_VS_FRONTIER_BRAIN;
+                return MUS_HG_VS_FRONTIER_BRAIN;
             else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 3)
                 return MUS_HG_VS_FRONTIER_BRAIN;
             else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 4)
@@ -10566,13 +10598,13 @@ u16 GetBattleBGM(void)
             else if (gSaveBlock2Ptr->optionsTrainerBattleMusic == 5)
             {
                 if((Random() % 3) == 1)
-                    return MUS_PL_VS_FRONTIER_BRAIN;
+                    return MUS_HG_VS_FRONTIER_BRAIN;
                 if((Random() % 3) == 2)
                     return MUS_HG_VS_FRONTIER_BRAIN;
                 else
-                    return MUS_VS_FRONTIER_BRAIN;
+                    return MUS_HG_VS_FRONTIER_BRAIN;
             }
-            return MUS_VS_FRONTIER_BRAIN;
+            return MUS_HG_VS_FRONTIER_BRAIN;
         case TRAINER_CLASS_TEAM_ROCKET:
             return MUS_HG_VS_ROCKET;
         case TRAINER_CLASS_ROCKET_ADMIN:
@@ -11498,7 +11530,7 @@ void RandomizeTypeEffectivenessListEWRAM(u16 seed)
     memcpy(stemp, sOneTypeChallengeValidTypes, sizeof(sOneTypeChallengeValidTypes));
     ShuffleListU8(stemp, NELEMS(sOneTypeChallengeValidTypes), seed);
 
-    sTypeEffectivenessList[TYPE_MYSTERY] = TYPE_MYSTERY;
+    sTypeEffectivenessList[TYPE_MYSTERY] = TYPE_NORMAL;
     for (i=0; i<NUMBER_OF_MON_TYPES; i++)
     {
         if (i != TYPE_MYSTERY)
@@ -11644,7 +11676,8 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     || species == SPECIES_DELCATTY
     || species == SPECIES_GULPIN
     || species == SPECIES_SWALOT
-    || species == SPECIES_LUVDISC))
+    || species == SPECIES_LUVDISC
+    || species == SPECIES_ELECTIVIRE))
     {
         if (typeNum == 1)
             type = gSpeciesInfo[species].types_old[0];

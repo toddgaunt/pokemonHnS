@@ -197,8 +197,6 @@ WhirlIslands_1F_EventScript_TalkToKimono::
 WhirlIslands_1F_EventScript_Lugia::
 	lockall
 	goto_if_eq VAR_COMPLETED_LUGIA, 4, WhirlIslands_1F_EventScript_LugiaPostgame
-	setweather WEATHER_NONE
-	doweather
 	waitse
 	playmoncry SPECIES_LUGIA, CRY_MODE_ENCOUNTER
 	delay 30
@@ -249,6 +247,8 @@ WhirlIslands_1F_EventScript_LugiaPostgame::
 WhirlIslands_1F_EventScript_LugiaFlewAway::
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_LUGIA
+	setweather WEATHER_NONE
+	doweather
 	setflag FLAG_HIDE_LUGIA
 	fadescreenswapbuffers FADE_FROM_BLACK
 	bufferspeciesname STR_VAR_1, SPECIES_LUGIA
@@ -259,6 +259,8 @@ WhirlIslands_1F_EventScript_CaughtLugia::
 	setflag FLAG_CAUGHT_LUGIA
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_LUGIA
+	setweather WEATHER_NONE
+	doweather
 	setflag FLAG_HIDE_LUGIA
 	fadescreenswapbuffers FADE_FROM_BLACK
 	return

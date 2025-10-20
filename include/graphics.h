@@ -5718,7 +5718,26 @@ extern const u32 gBattleAnimSpritePal_DragonPulseRing[];
 extern const u32 gBattleAnimSpriteGfx_PurpleJab[];
 extern const u32 gBattleAnimSpritePal_PurpleJab[];
 
+extern const u32 gTrainerFrontPic_SalonMaidenAnabel[];
+extern const u32 gTrainerFrontPic_DomeAceTucker[];
+extern const u32 gTrainerFrontPic_PalaceMavenSpenser[];
+extern const u32 gTrainerFrontPic_ArenaTycoonGreta[];
+extern const u32 gTrainerFrontPic_FactoryHeadNoland[];
+extern const u32 gTrainerFrontPic_PikeQueenLucy[];
+extern const u32 gTrainerFrontPic_PyramidKingBrandon[];
+
+extern const u32 gTrainerPalette_SalonMaidenAnabel[];
+extern const u32 gTrainerPalette_DomeAceTucker[];
+extern const u32 gTrainerPalette_PalaceMavenSpenser[];
+extern const u32 gTrainerPalette_ArenaTycoonGreta[];
+extern const u32 gTrainerPalette_FactoryHeadNoland[];
+extern const u32 gTrainerPalette_PikeQueenLucy[];
+extern const u32 gTrainerPalette_PyramidKingBrandon[];
+
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
+
+extern const u32 gItemIcon_HealingHeart[];
+extern const u32 gItemIconPalette_HealingHeart[];
 
 #endif //GUARD_GRAPHICS_H
