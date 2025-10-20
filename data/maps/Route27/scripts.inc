@@ -141,7 +141,7 @@ Route27_Text_CooltrainermBlakeBeaten:
     .string "Yow!$"
 
 Route27_Text_CooltrainermBlakeAfter:
-    .string "If you prevail on this harsh trek,\p"
+    .string "If you prevail on this harsh trek,\n"
     .string "the truth will be revealed!\p"
     .string "Heh, sorry, I just wanted to say\n"
     .string "something cool.$"
