@@ -1377,6 +1377,7 @@ const union {
         .SECRET_POWER = TRUE,
         .REST = TRUE,
         .ATTRACT = TRUE,
+        .SHADOW_BALL = TRUE,
         .SURF = TRUE,
         .STRENGTH = TRUE,
         .FLASH = TRUE,
