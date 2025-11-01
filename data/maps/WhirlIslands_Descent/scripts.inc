@@ -13,3 +13,7 @@ WhirlIslands_Descent_EventScript_Item_PP_Max::
 	finditem ITEM_PP_MAX
 	end
 
+WhirlIslands_B2F_Trigger_Fog::
+	setweather WEATHER_FOG_HORIZONTAL
+	doweather
+	end

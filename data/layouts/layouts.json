@@ -8274,10 +8274,10 @@
     {
       "id": "LAYOUT_WORLD_HUB2",
       "name": "WorldHub2_Layout",
-      "width": 30,
+      "width": 80,
       "height": 40,
       "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_House_Lab",
+      "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WorldHub2/border.bin",
       "blockdata_filepath": "data/layouts/WorldHub2/map.bin"
     },
@@ -8755,7 +8755,7 @@
       "id": "LAYOUT_WHIRL_ISLANDS_DESCENT",
       "name": "WhirlIslands_Descent_Layout",
       "width": 70,
-      "height": 100,
+      "height": 101,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WhirlIslands_Descent/border.bin",
