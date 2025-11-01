@@ -4387,6 +4387,7 @@ const union {
         .REST = TRUE,
         .ATTRACT = TRUE,
         .THIEF = TRUE,
+        .CUT = TRUE,
         .FLASH = TRUE,
     } },
 
@@ -4409,6 +4410,7 @@ const union {
         .REST = TRUE,
         .ATTRACT = TRUE,
         .THIEF = TRUE,
+        .CUT = TRUE,
         .FLASH = TRUE,
     } },
 
