@@ -1697,76 +1697,74 @@ u8 UpdateTimeOfDay(void) {
     RtcCalcLocalTime();
     hours = gLocalTime.hours;
     minutes = gLocalTime.minutes;
-    if (hours < 4) { // night
+
+    if (hours < 5) { // night 0–5
         currentTimeBlend.weight = 256;
         currentTimeBlend.altWeight = 0;
         gTimeOfDay = currentTimeBlend.time0 = currentTimeBlend.time1 = TIME_OF_DAY_NIGHT;
 
-        FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
-        FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
+        FlagClear(FLAG_NIGHT_POKEMON);
+        FlagSet(FLAG_DAY_POKEMON);
 
-
-    } else if (hours < 7) { // night->twilight
+    } else if (hours < 6) { // night->twilight 5–6
         currentTimeBlend.time0 = TIME_OF_DAY_NIGHT;
         currentTimeBlend.time1 = TIME_OF_DAY_TWILIGHT;
-        currentTimeBlend.weight = 256 - 256 * ((hours - 4) * 60 + minutes) / ((7-4)*60);
+        currentTimeBlend.weight    = 256 - 256 * ((hours - 5) * 60 + minutes) / ((6 - 5) * 60);
         currentTimeBlend.altWeight = (256 - currentTimeBlend.weight) / 2;
-        gTimeOfDay = TIME_OF_DAY_DAY;
+        gTimeOfDay = TIME_OF_DAY_TWILIGHT; 
 
-        FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
-        FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
+        FlagClear(FLAG_NIGHT_POKEMON);
+        FlagSet(FLAG_DAY_POKEMON);
 
-
-    } else if (hours < 10) { // twilight->day
+    } else if (hours < 7) { // twilight->day 6–7
         currentTimeBlend.time0 = TIME_OF_DAY_TWILIGHT;
         currentTimeBlend.time1 = TIME_OF_DAY_DAY;
-        currentTimeBlend.weight = 256 - 256 * ((hours - 7) * 60 + minutes) / ((10-7)*60);
+        currentTimeBlend.weight    = 256 - 256 * ((hours - 6) * 60 + minutes) / ((7 - 6) * 60);
         currentTimeBlend.altWeight = (256 - currentTimeBlend.weight) / 2 + 128;
         gTimeOfDay = TIME_OF_DAY_DAY;
 
-        FlagSet(FLAG_NIGHT_POKEMON); //Hide night pokemon
-        FlagClear(FLAG_DAY_POKEMON); //Show day pokemon
+        FlagSet(FLAG_NIGHT_POKEMON);
+        FlagClear(FLAG_DAY_POKEMON);
 
-    } else if (hours < 18) { // day
+    } else if (hours < 17) { // day 7–17
         currentTimeBlend.weight = currentTimeBlend.altWeight = 256;
         gTimeOfDay = currentTimeBlend.time0 = currentTimeBlend.time1 = TIME_OF_DAY_DAY;
 
-        FlagSet(FLAG_NIGHT_POKEMON); //Hide night pokemon
-        FlagClear(FLAG_DAY_POKEMON); //Show day pokemon
+        FlagSet(FLAG_NIGHT_POKEMON);
+        FlagClear(FLAG_DAY_POKEMON);
 
-        
-
-    } else if (hours < 20) { // day->twilight
+    } else if (hours < 18) { // day->twilight 17–18
         currentTimeBlend.time0 = TIME_OF_DAY_DAY;
         currentTimeBlend.time1 = TIME_OF_DAY_TWILIGHT;
-        currentTimeBlend.weight = 256 - 256 * ((hours - 18) * 60 + minutes) / ((20-18)*60);
+        currentTimeBlend.weight    = 256 - 256 * ((hours - 17) * 60 + minutes) / ((18 - 17) * 60);
         currentTimeBlend.altWeight = currentTimeBlend.weight / 2 + 128;
         gTimeOfDay = TIME_OF_DAY_TWILIGHT;
 
-        FlagSet(FLAG_NIGHT_POKEMON); //Hide night pokemon
-        FlagClear(FLAG_DAY_POKEMON); //Show day pokemon
+        FlagSet(FLAG_NIGHT_POKEMON);
+        FlagClear(FLAG_DAY_POKEMON);
 
-    } else if (hours < 22) { // twilight->night
+    } else if (hours < 19) { // twilight->night 18–19
         currentTimeBlend.time0 = TIME_OF_DAY_TWILIGHT;
         currentTimeBlend.time1 = TIME_OF_DAY_NIGHT;
-        currentTimeBlend.weight = 256 - 256 * ((hours - 20) * 60 + minutes) / ((22-20)*60);
+        currentTimeBlend.weight    = 256 - 256 * ((hours - 18) * 60 + minutes) / ((19 - 18) * 60);
         currentTimeBlend.altWeight = currentTimeBlend.weight / 2;
         gTimeOfDay = TIME_OF_DAY_NIGHT;
 
-        FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
-        FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
+        FlagClear(FLAG_NIGHT_POKEMON);
+        FlagSet(FLAG_DAY_POKEMON);
 
-    } else { // 22-24, night
+    } else { // night 19–24
         currentTimeBlend.weight = 256;
         currentTimeBlend.altWeight = 0;
         gTimeOfDay = currentTimeBlend.time0 = currentTimeBlend.time1 = TIME_OF_DAY_NIGHT;
 
-        FlagClear(FLAG_NIGHT_POKEMON); //Show night pokemon
-        FlagSet(FLAG_DAY_POKEMON); //Hide day pokemon
-
+        FlagClear(FLAG_NIGHT_POKEMON);
+        FlagSet(FLAG_DAY_POKEMON);
     }
+
     return gTimeOfDay;
 }
+
 
 bool8 MapHasNaturalLight(u8 mapType) 
 { // Whether a map type is naturally lit/outside

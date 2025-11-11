@@ -2696,7 +2696,7 @@ void UpdateLightSprite(struct Sprite *sprite) {
         return;
     }
 
-    if (gTimeOfDay != TIME_OF_DAY_NIGHT && sprite->data[5] != 4) { //Case 4 (Lighthouse and Glow Lichen) will remain on during daytime
+    if (gTimeOfDay == TIME_OF_DAY_DAY && sprite->data[5] != 4) { //Case 4 (Lighthouse and Glow Lichen) will remain on during daytime
         sprite->invisible = TRUE;
         return;
     }
