@@ -5153,6 +5153,7 @@ const union {
         .ATTRACT = TRUE,
         .SNATCH = TRUE,
         .CALM_MIND = TRUE,
+        .THIEF = TRUE,
         .CUT = TRUE,
         .FLASH = TRUE,
     } },
