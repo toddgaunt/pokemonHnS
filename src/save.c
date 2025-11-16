@@ -13,6 +13,8 @@
 #include "link.h"
 #include "constants/game_stat.h"
 #include "event_data.h"
+#include "strings.h"
+#include "string_util.h"
 
 static u16 CalculateChecksum(void *, u16);
 static bool8 ReadFlashSector(u8, struct SaveSector *);
@@ -985,6 +987,12 @@ u8 LoadGameSave(u8 saveType)
             VarSet(VAR_ECRUTEAK_CITY_THEATER, 8);
         }
         gSaveBlock1Ptr->versionId = 6;
+    }
+    if (gSaveBlock1Ptr->versionId <7){
+        static const u8 *const gSilverPresetNames[] = {
+            gText_ExpandedPlaceholder_Silver};
+        StringCopy(gSaveBlock2Ptr->rivalName, gSilverPresetNames[0]);
+        gSaveBlock1Ptr->versionId = 7;
     }
     return status;
 }

@@ -363,6 +363,11 @@ NewBarkTown_Lab_EventScript_PoliceNo::
 	end
 
 NewBarkTown_Lab_EventScript_PoliceYes::
+	closemessage
+	special NameRival
+	waitstate
+	msgbox NewBarkTown_Lab_Text_Officer2_1, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, FALSE, NewBarkTown_Lab_EventScript_PoliceYes
 	msgbox NewBarkTown_Lab_Text_Officer2, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_COP, NewBarkTown_Lab_Movement_CopLeaves
@@ -963,8 +968,10 @@ NewBarkTown_Lab_Text_Officer1:
 	.string "Did you happen to get his\n"
 	.string "name?$"
 
+NewBarkTown_Lab_Text_Officer2_1:
+	.string "OK! So {RIVAL} was his name?$"
+
 NewBarkTown_Lab_Text_Officer2:
-	.string "OK! So SILVER was his name.\p"
 	.string "Thanks for helping my\n"
 	.string "investigation!$"
 
