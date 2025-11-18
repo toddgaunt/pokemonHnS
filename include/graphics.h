@@ -3661,6 +3661,7 @@ extern const u32 gBattleTerrainAnimTiles_TallGrass_2[];
 extern const u32 gBattleTerrainAnimTilemap_TallGrass_2[];
 extern const u32 gBattleTerrainPalette_TallGrass_Night[];
 extern const u32 gBattleTerrainPalette_TallGrass_2_Night[];
+extern const u32 gBattleTerrainPalette_TallGrass_2_Twilight[];
 //long grass
 extern const u32 gBattleTerrainTiles_LongGrass[];
 extern const u32 gBattleTerrainTilemap_LongGrass[];
@@ -3675,6 +3676,7 @@ extern const u32 gBattleTerrainAnimTiles_LongGrass_2[];
 extern const u32 gBattleTerrainAnimTilemap_LongGrass_2[];
 extern const u32 gBattleTerrainPalette_LongGrass_2[];
 extern const u32 gBattleTerrainPalette_LongGrass_2_Night[];
+extern const u32 gBattleTerrainPalette_LongGrass_2_Twilight[];
 //sand
 extern const u32 gBattleTerrainTiles_Sand[];
 extern const u32 gBattleTerrainTilemap_Sand[];
@@ -3689,6 +3691,7 @@ extern const u32 gBattleTerrainAnimTiles_Sand_2[];
 extern const u32 gBattleTerrainAnimTilemap_Sand_2[];
 extern const u32 gBattleTerrainPalette_Sand_2[];
 extern const u32 gBattleTerrainPalette_Sand_2_Night[];
+extern const u32 gBattleTerrainPalette_Sand_2_Twilight[];
 //underwater
 extern const u32 gBattleTerrainTiles_Underwater[];
 extern const u32 gBattleTerrainTilemap_Underwater[];
@@ -3715,6 +3718,7 @@ extern const u32 gBattleTerrainAnimTiles_Water_2[];
 extern const u32 gBattleTerrainAnimTilemap_Water_2[];
 extern const u32 gBattleTerrainPalette_Water_2[];
 extern const u32 gBattleTerrainPalette_Water_2_Night[];
+extern const u32 gBattleTerrainPalette_Water_2_Twilight[];
 //pond
 extern const u32 gBattleTerrainTiles_PondWater[];
 extern const u32 gBattleTerrainTilemap_PondWater[];
@@ -3730,6 +3734,7 @@ extern const u32 gBattleTerrainAnimTiles_PondWater_2[];
 extern const u32 gBattleTerrainAnimTilemap_PondWater_2[];
 extern const u32 gBattleTerrainPalette_PondWater_2[];
 extern const u32 gBattleTerrainPalette_PondWater_2_Night[];
+extern const u32 gBattleTerrainPalette_PondWater_2_Twilight[];
 extern const u32 gBattleTerrainPalette_PondWater_2_Cave[];
 //rock
 extern const u32 gBattleTerrainTiles_Rock[];
@@ -3745,6 +3750,7 @@ extern const u32 gBattleTerrainAnimTiles_Rock_2[];
 extern const u32 gBattleTerrainAnimTilemap_Rock_2[];
 extern const u32 gBattleTerrainPalette_Rock_2[];
 extern const u32 gBattleTerrainPalette_Rock_2_Night[];
+extern const u32 gBattleTerrainPalette_Rock_2_Twilight[];
 //cave
 extern const u32 gBattleTerrainTiles_Cave[];
 extern const u32 gBattleTerrainTilemap_Cave[];
