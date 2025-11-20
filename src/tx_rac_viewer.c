@@ -123,70 +123,80 @@ static const u8 sText_ModernMoves_Label[]   = _("{PKMN} MOVEPOOL");
 static const u8 sText_LegendaryAbils_Label[]= _("LEGEN. ABILITIES");
 
 //page 2 Features
-static const u8 sText_RTCType_Label[]      = _("RTC TYPE");
+static const u8 sText_RTCType_Label[]      = _("CLOCK TYPE");
 static const u8 sText_ShinyChance_Label[]  = _("SHINY CHANCE");
-static const u8 sText_ItemDrops_Label[]    = _("ITEM DROPS");
+static const u8 sText_ItemDrops_Label[]    = _("ITEM DROP");
 static const u8 sText_FrontierBans_Label[] = _("FRONTIER BANS");
 static const u8 sText_ShinyColors_Label[]  = _("SHINY COLORS");
 
 // page 3 (Randomizer)
-static const u8 sText_Rand_Starter[]          = _("RANDOM STARTER");
-static const u8 sText_Rand_Wild[]             = _("RANDOM WILD PKMN");
-static const u8 sText_Rand_Trainer[]          = _("RANDOM TRAINER");
+static const u8 sText_Randomizer[]            = _("RANDOMIZER");
+static const u8 sText_Rand_Starter[]          = _("STARTER POKéMON");
+static const u8 sText_Rand_Wild[]             = _("WILD POKéMON");
+static const u8 sText_Rand_Trainer[]          = _("TRAINER");
 static const u8 sText_Rand_Static[]           = _("RANDOM STATIC");
-static const u8 sText_Rand_SimilarEvoLvl[]    = _("SIMILAR EVO LVL");
-static const u8 sText_Rand_IncludeLegends[]   = _("INCLUDE LEGENDS");
-static const u8 sText_Rand_Type[]             = _("RANDOM TYPE");
-static const u8 sText_Rand_Moves[]            = _("RANDOM MOVES");
-static const u8 sText_Rand_Abilities[]        = _("RANDOM ABILITY");
-static const u8 sText_Rand_Evolutions[]       = _("RANDOM EVO");
-static const u8 sText_Rand_EvoMethods[]       = _("RAND. EVO METHOD");
-static const u8 sText_Rand_TypeEffect[]       = _("TYPE EFFECTIVE");
-static const u8 sText_Rand_Items[]            = _("RANDOM ITEMS");
-static const u8 sText_Rand_Chaos[]            = _("RANDOM CHAOS");
+static const u8 sText_Rand_SimilarEvoLvl[]    = _("BALANCE ON TIERS");
+static const u8 sText_Rand_IncludeLegends[]   = _("LEGENDARIES");
+static const u8 sText_Rand_Type[]             = _("TYPE");
+static const u8 sText_Rand_Moves[]            = _("MOVES");
+static const u8 sText_Rand_Abilities[]        = _("ABILITIES");
+static const u8 sText_Rand_Evolutions[]       = _("EVOLUTIONS");
+static const u8 sText_Rand_EvoMethods[]       = _("EVO LINES");
+static const u8 sText_Rand_TypeEffect[]       = _("EFFECTIVENESS");
+static const u8 sText_Rand_Items[]            = _("ITEMS");
+static const u8 sText_Rand_Chaos[]            = _("CHAOS");
 
 
 // page 4 (Nuzlocke)
 static const u8 sText_Nuz_Nuzlocke[]         = _("NUZLOCKE");
 static const u8 sText_Nuz_Hardcore[]         = _("NUZLOCKE HARDCORE");
-static const u8 sText_Nuz_Mode[]            = _("NUZLOCKE MODE");
-static const u8 sText_Nuz_SpeciesClause[]    = _("SPECIES CLAUSE");
+static const u8 sText_Nuz_Mode[]             = _("NUZLOCKE MODE");
+static const u8 sText_Nuz_SpeciesClause[]    = _("DUPES CLAUSE");
 static const u8 sText_Nuz_ShinyClause[]      = _("SHINY CLAUSE");
-static const u8 sText_Nuz_Nicknaming[]       = _("NICKNAMING");
-static const u8 sText_Nuz_Deletion[]         = _("DELETION");
-static const u8 sText_Nuz_RareCandy[]        = _("RARE CANDY");
+static const u8 sText_Nuz_Nicknaming[]       = _("NICKNAMES");
+static const u8 sText_Nuz_Deletion[]         = _("FAINTING");
+static const u8 sText_Nuz_RareCandy[]        = _("INF RARE CANDY");
 
 // page 5 (Difficulty) — labels
 static const u8 sText_Diff_PartyLimit[]      = _("PARTY LIMIT");
 static const u8 sText_Diff_LevelCap[]        = _("LEVEL CAP");
-static const u8 sText_Diff_ExpMult[]         = _("EXP MULTIPLIER");
-static const u8 sText_Diff_NoItemPlayer[]    = _("NO PLAYER ITEMS");
-static const u8 sText_Diff_NoItemTrainer[]   = _("NO TRAINER ITEMS");
+static const u8 sText_Diff_ExpMult[]         = _("EXP. MULTIPLIER");
+static const u8 sText_Diff_NoItemPlayer[]    = _("PLAYER ITEMS");
+static const u8 sText_Diff_NoItemTrainer[]   = _("TRAINER ITEMS");
+static const u8 sText_Diff_MaxPartyIVs[]     = _("PLAYER IVs");
+static const u8 sText_Diff_ScalingIVs[]      = _("TRAINER IVs");
 static const u8 sText_Diff_NoEVs[]           = _("PLAYER EVs");
-static const u8 sText_Diff_ScalingIVs[]      = _("TRAINER SCALING IVs");
-static const u8 sText_Diff_ScalingEVs[]      = _("TRAINER SCALING EVs");
-static const u8 sText_Diff_PkmnCenter[]      = _("LIMIT POKéCENTER");
-static const u8 sText_Diff_MaxPartyIVs[]     = _("MAX PARTY IVs");
-static const u8 sText_Diff_EscapeRopeDig[]   = _("ESCAPE ROPE/DIG");
+static const u8 sText_Diff_ScalingEVs[]      = _("TRAINER EVs");
+static const u8 sText_Diff_LessEscapes[]     = _("LESS ESCAPES");
+static const u8 sText_Diff_EscapeRopeDig[]   = _("ESC. ROPE / DIG");
 
 // page 6 (Other Challenges) — labels
-static const u8 sText_Chk_PCHeal[]            = _("PC HEAL");
-static const u8 sText_Chk_Expensive[]         = _("PRICES");
-static const u8 sText_Chk_EvoLimit[]          = _("EVOLUTION LIMIT");
-static const u8 sText_Chk_OneType[]           = _("MONOTYPE");
-static const u8 sText_Chk_BaseStatEq[]        = _("BASE STAT EQUALIZER");
+static const u8 sText_Chk_PkmnCenter[]        = _("POKéCENTER");
+static const u8 sText_Chk_PCHeal[]            = _("PC HEAL {PKMN}");
+static const u8 sText_Chk_Expensive[]         = _("ULTRA EXPENSIVE!");
+static const u8 sText_Chk_EvoLimit[]          = _("EVO LIMIT");
+static const u8 sText_Chk_OneType[]           = _("ONE TYPE ONLY");
+static const u8 sText_Chk_BaseStatEq[]        = _("STAT EQUALIZER");
 static const u8 sText_Chk_Mirror[]            = _("MIRROR MODE");
 static const u8 sText_Chk_MirrorThief[]       = _("MIRROR THIEF");
 
 //Options
 static const u8 sText_On[]  = _("ON");
 static const u8 sText_Off[] = _("OFF");
+static const u8 sText_Yes[]   = _("YES");
+static const u8 sText_No[]    = _("NO");
+static const u8 sText_Original[]  = _("ORIGINAL");
+static const u8 sText_Modern[]    = _("MODERN");
 static const u8 sText_RTC[]     = _("RTC");
-static const u8 sText_FakeRTC[] = _("Fake RTC");
+static const u8 sText_FakeRTC[] = _("FAKE RTC");
+static const u8 sText_Frontier_Ban[]     = _("BAN");
+static const u8 sText_Frontier_Unban[]   = _("UNBAN");
 static const u8 sText_Nuz_Mode_Off[]        = _("OFF");
 static const u8 sText_Nuz_Mode_Easy[]       = _("EASY");
-static const u8 sText_Nuz_Mode_Standard[]   = _("STANDARD");
-static const u8 sText_Nuz_Mode_Hardcore[]   = _("HARDCORE");
+static const u8 sText_Nuz_Mode_Standard[]   = _("NORMAL");
+static const u8 sText_Nuz_Mode_Hardcore[]   = _("HARD");
+static const u8 sText_Nuz_Fainting_Cemetery[]   = _("CEMETERY");
+static const u8 sText_Nuz_Fainting_Release[]    = _("RELEASE");
 
 // Party Limit: OFF,5,4,3,2,1
 static const u8 sPL_Off[] = _("OFF");
@@ -220,13 +230,14 @@ static const u8 *const sText_Diff_NoEVs_Strings[] = {
 static const u8 sSC_Off[]   = _("OFF");
 static const u8 sSC_Scale[] = _("SCALE");
 static const u8 sSC_Hard[]  = _("HARD");
+static const u8 sSC_Extreme[]  = _("EXTREME");
 static const u8 *const sText_Diff_Scaling_Strings[] = {
-    sSC_Off, sSC_Scale, sSC_Hard
+    sSC_Off, sSC_Scale, sSC_Hard, sSC_Extreme
 };
 static const u8 sEX_Off[]  = _("OFF");
-static const u8 sEX_5x[]   = _("5x");
-static const u8 sEX_10x[]  = _("10x");
-static const u8 sEX_50x[]  = _("50x");
+static const u8 sEX_5x[]   = _("x5");
+static const u8 sEX_10x[]  = _("x10");
+static const u8 sEX_50x[]  = _("x50!");
 static const u8 *const sText_Chk_Expensive_Strings[] = { sEX_Off, sEX_5x, sEX_10x, sEX_50x };
 static const u8 sEL_Off[]   = _("OFF");
 static const u8 sEL_First[] = _("FIRST");
@@ -409,6 +420,13 @@ static u8 GetSel_Feature_FrontierBans(void) { return (gSaveBlock1Ptr->tx_Feature
 static u8 GetSel_Feature_ShinyColors(void)  { return gSaveBlock1Ptr->tx_Features_ShinyColors      ? 1 : 0; }
 
 // Page 3 (Randomizer) getters
+static u8 GetSel_Randomizer(void)
+{
+    if (IsRandomizerActivated())
+        return 1;
+    else
+        return 0;
+}
 static u8 GetSel_Rand_Starter(void)        { return gSaveBlock1Ptr->tx_Random_Starter            ? 1 : 0; }
 static u8 GetSel_Rand_Wild(void)           { return gSaveBlock1Ptr->tx_Random_WildPokemon        ? 1 : 0; }
 static u8 GetSel_Rand_Trainer(void)        { return gSaveBlock1Ptr->tx_Random_Trainer            ? 1 : 0; }
@@ -450,20 +468,20 @@ static u8 GetSel_Nuz_RareCandy(void)       { return gSaveBlock1Ptr->tx_Nuzlocke_
 static u8 GetSel_Diff_PartyLimit(void)      { return gSaveBlock1Ptr->tx_Challenges_PartyLimit; }      // 0..5 (OFF,5,4,3,2,1)
 static u8 GetSel_Diff_LevelCap(void)        { return gSaveBlock1Ptr->tx_Challenges_LevelCap; }        // 0..2 (Off, Easy, Hard)
 static u8 GetSel_Diff_ExpMult(void)         { return gSaveBlock1Ptr->tx_Challenges_ExpMultiplier; }   // 0..3 (1x,1.5x,2x,0x)
-static u8 GetSel_Diff_NoEVs(void)           { return gSaveBlock1Ptr->tx_Challenges_NoEVs; }           // 0..2 (Yes,No,No(HP))
+static u8 GetSel_Diff_MaxPartyIVs(void)     { return gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs; }
 static u8 GetSel_Diff_ScalingIVs(void)      { return gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs; } // 0..2
 static u8 GetSel_Diff_ScalingEVs(void)      { return gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs; } // 0..2
 
 // Plain bool rows (normalize to 0/1 for the shared bool renderer)
 static u8 GetSel_Diff_NoItemPlayer(void)    { return gSaveBlock1Ptr->tx_Challenges_NoItemPlayer ? 1 : 0; }
 static u8 GetSel_Diff_NoItemTrainer(void)   { return gSaveBlock1Ptr->tx_Challenges_NoItemTrainer ? 1 : 0; }
-static u8 GetSel_Diff_PkmnCenter(void)      { return gSaveBlock1Ptr->tx_Challenges_PkmnCenter ? 1 : 0; }
-static u8 GetSel_Diff_MaxPartyIVs(void)     { return gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs ? 1 : 0; }
+static u8 GetSel_Diff_NoEVs(void)           { return gSaveBlock1Ptr->tx_Challenges_NoEVs; }           // 0..2 (Yes,No,No(HP))
 static u8 GetSel_Diff_EscapeRopeDig(void)   { return (gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig==0) ? 1 : 0; }//Inverted
+static u8 GetSel_Diff_LessEscapes(void)     { return gSaveBlock1Ptr->tx_Challenges_LessEscapes ? 1 : 0; } //Yes/No
 
 // ---- Page 6 getters ----
 // Multi-choice rows return raw index; bool rows return 0/1
-
+static u8 GetSel_Chk_PkmnCenter(void)      { return gSaveBlock1Ptr->tx_Challenges_PkmnCenter ? 1 : 0; }
 static u8 GetSel_Chk_PCHeal(void)          { return gSaveBlock1Ptr->tx_Challenges_PCHeal ? 1 : 0; }
 
 // Expensive (0..3) => OFF, 5X, 10X, 50X
@@ -498,27 +516,28 @@ static u8 GetSel_Chk_MirrorThief(void)     { return gSaveBlock1Ptr->tx_Challenge
 
 
 static const struct ViewerBoolRow sBoolRows[] = {
-    { sText_InfiniteTMs_Label,   GetSel_InfiniteTMs        },
-    { sText_SurvivePoison_Label, GetSel_SurvivePoison      },
+    { sText_ModernMoves_Label,   GetSel_ModernMoves        },
     { sText_Synchronize_Label,   GetSel_Synchronize        },
-    { sText_Mints_Label,         GetSel_Mints              },
+    { sText_Sturdy_Label,        GetSel_Sturdy             },
     { sText_NewCitrus_Label,     GetSel_NewCitrus          },
     { sText_FairyTypes_Label,    GetSel_FairyTypes         },
-    { sText_Sturdy_Label,        GetSel_Sturdy             },
-    { sText_ModernMoves_Label,   GetSel_ModernMoves        },
     { sText_LegendaryAbils_Label,GetSel_LegendaryAbilities },
+    { sText_InfiniteTMs_Label,   GetSel_InfiniteTMs        },
+    { sText_Mints_Label,         GetSel_Mints              },
+    { sText_SurvivePoison_Label, GetSel_SurvivePoison      },
 };
 
 static const struct ViewerBoolRow sBoolRows_Page2[] = {
     { sText_RTCType_Label,      GetSel_Feature_RTCType      },
     { sText_ShinyChance_Label,  GetSel_Feature_ShinyChance  },
+    { sText_ShinyColors_Label,  GetSel_Feature_ShinyColors  },
     { sText_ItemDrops_Label,    GetSel_Feature_ItemDrops    },
     { sText_FrontierBans_Label, GetSel_Feature_FrontierBans },
-    { sText_ShinyColors_Label,  GetSel_Feature_ShinyColors  },
 };
 
 // Page 3 (Randomizer)
 static const struct ViewerBoolRow sBoolRows_Page3[] = {
+    { sText_Randomizer,          GetSel_Randomizer          },
     { sText_Rand_Starter,        GetSel_Rand_Starter        },
     { sText_Rand_Wild,           GetSel_Rand_Wild           },
     { sText_Rand_Trainer,        GetSel_Rand_Trainer        },
@@ -554,22 +573,23 @@ static const struct ViewerBoolRow sBoolRows_Page5[] = {
     { sText_Diff_ExpMult,       NULL }, // idx 2 — single-value
     { sText_Diff_NoItemPlayer,  GetSel_Diff_NoItemPlayer  }, // idx 3
     { sText_Diff_NoItemTrainer, GetSel_Diff_NoItemTrainer }, // idx 4
-    { sText_Diff_NoEVs,         NULL }, // idx 5 — single-value
+    { sText_Diff_MaxPartyIVs,   NULL }, // idx 5
     { sText_Diff_ScalingIVs,    NULL }, // idx 6 — single-value
-    { sText_Diff_ScalingEVs,    NULL }, // idx 7 — single-value
-    { sText_Diff_PkmnCenter,    GetSel_Diff_PkmnCenter   }, // idx 8
-    { sText_Diff_MaxPartyIVs,   GetSel_Diff_MaxPartyIVs  }, // idx 9
+    { sText_Diff_NoEVs,         GetSel_Diff_NoEVs }, // idx 7 — single-value
+    { sText_Diff_ScalingEVs,    NULL }, // idx 8 — single-value
+    { sText_Diff_LessEscapes,   GetSel_Diff_LessEscapes  }, // idx 9
     { sText_Diff_EscapeRopeDig, GetSel_Diff_EscapeRopeDig}, // idx 10
 };
 
 static const struct ViewerBoolRow sBoolRows_Page6[] = {
-    { sText_Chk_PCHeal,        GetSel_Chk_PCHeal      }, // idx 0 — bool
-    { sText_Chk_Expensive,     NULL                   }, // idx 1 — single-value
-    { sText_Chk_EvoLimit,      NULL                   }, // idx 2 — single-value
-    { sText_Chk_OneType,       NULL                   }, // idx 3 — single-value
-    { sText_Chk_BaseStatEq,    NULL                   }, // idx 4 — single-value
-    { sText_Chk_Mirror,        GetSel_Chk_Mirror      }, // idx 5 — bool
-    { sText_Chk_MirrorThief,   GetSel_Chk_MirrorThief }  // idx 6 — bool
+    { sText_Chk_PkmnCenter,    GetSel_Chk_PkmnCenter  }, // idx 0
+    { sText_Chk_PCHeal,        GetSel_Chk_PCHeal      }, // idx 1 — bool
+    { sText_Chk_Expensive,     NULL                   }, // idx 2 — single-value
+    { sText_Chk_EvoLimit,      NULL                   }, // idx 3 — single-value
+    { sText_Chk_OneType,       NULL                   }, // idx 4 — single-value
+    { sText_Chk_BaseStatEq,    NULL                   }, // idx 5 — single-value
+    { sText_Chk_Mirror,        GetSel_Chk_Mirror      }, // idx 6 — bool
+    { sText_Chk_MirrorThief,   GetSel_Chk_MirrorThief },  // idx 7 — bool
 };
 
 
@@ -585,8 +605,81 @@ struct ViewerPage
 // ---- Page 1 draw (simple bool rows) ----
 static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
 {
-    const struct ViewerBoolRow *row = &sBoolRows[idx];
-    Viewer_DrawBoolRow(visRow, row->label, row->getSel(), (idx == sCurIndex));
+    const bool8 selected = (idx == sCurIndex);
+
+    switch (idx)
+    {
+    case 0: // PKM MOVEPOOL
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_ModernMoves_Label);
+        u8 sel = GetSel_ModernMoves();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "ORIGINAL"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "MODERN"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Original);
+        int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_Modern);
+        break;
+    }
+    case 1: // SYNCHRONIZE
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Synchronize_Label);
+        u8 sel = GetSel_Synchronize();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "ORIGINAL"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "MODERN"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Original);
+        int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_Modern);
+        break;
+    }
+    case 2: // STURDY
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Sturdy_Label);
+        u8 sel = GetSel_Sturdy();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "ORIGINAL"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "MODERN"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Original);
+        int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_Modern);
+        break;
+    }
+    case 3: // SITRUS BERRY
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_NewCitrus_Label);
+        u8 sel = GetSel_NewCitrus();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "ORIGINAL"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "MODERN"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Original);
+        int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_Modern);
+        break;
+    }
+    default:
+        {
+            const struct ViewerBoolRow *row = &sBoolRows[idx];
+            Viewer_DrawBoolRow(visRow, row->label, row->getSel(), (idx == sCurIndex));
+            break;
+        }
+    }
 }
 
 
@@ -621,6 +714,22 @@ static void Viewer_DrawRow_Page2(u8 visRow, u16 idx)
                                   sText_Challenges_ShinyChance_Strings[sc], selected);
         break;
     }
+    case 4: // FRONTIER BANS
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_FrontierBans_Label);
+        u8 sel = GetSel_Feature_FrontierBans();
+        const u8 *leftStyle  = (sel == 1) ? sColorRightRed : sColorRightGray; // "BAN"
+        const u8 *rightStyle = (sel == 0) ? sColorRightRed : sColorRightGray; // "UNBAN"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Frontier_Ban);
+        int xr = GetStringRightAlignXOffset(1, sText_Frontier_Unban, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_Frontier_Unban);
+        break;
+    }
     default:
     {
         const struct ViewerBoolRow *row = &sBoolRows_Page2[idx];
@@ -642,17 +751,41 @@ static void Viewer_DrawRow_Page3(u8 visRow, u16 idx)
 // ---- Page 4 draw (all bool rows) ----
 static void Viewer_DrawRow_Page4(u8 visRow, u16 idx)
 {
-    if (idx == 0)
+    const bool8 selected = (idx == sCurIndex);
+    switch (idx)
+    {
+    case 0:
     {
         u8 mode = GetNuzlockeModeIndex();
         const u8 *val = (mode == 1) ? sText_Nuz_Mode_Easy :
                         (mode == 2) ? sText_Nuz_Mode_Standard :
                         (mode == 3) ? sText_Nuz_Mode_Hardcore : sText_Nuz_Mode_Off;
         Viewer_DrawSingleValueRow(visRow, sText_Nuz_Mode, val, (idx == sCurIndex));
-        return;
+        break;
     }
-    const struct ViewerBoolRow *row = &sBoolRows_Page4[idx - 1];
-    Viewer_DrawBoolRow(visRow, row->label, row->getSel(), (idx == sCurIndex));
+    case 4: 
+        {
+            const int y = visRow * 16;
+            Viewer_ClearRow(visRow, selected);
+            AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                        sColorLeftActive, TEXT_SKIP_DRAW, sText_Nuz_Deletion);
+            u8 sel = GetSel_Nuz_Deletion();
+            const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "CEMETERY"
+            const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "RELEASE"
+            AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                        leftStyle, TEXT_SKIP_DRAW, sText_Nuz_Fainting_Cemetery);
+            int xr = GetStringRightAlignXOffset(1, sText_Nuz_Fainting_Release, 198);
+            AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                        rightStyle, TEXT_SKIP_DRAW, sText_Nuz_Fainting_Release);
+            break;
+        }
+    default:
+        {
+            const struct ViewerBoolRow *row = &sBoolRows_Page4[idx - 1];
+            Viewer_DrawBoolRow(visRow, row->label, row->getSel(), (idx == sCurIndex));
+            break;
+        }
+    }
 }
 
 
@@ -684,25 +817,91 @@ static void Viewer_DrawRow_Page5(u8 visRow, u16 idx)
         Viewer_DrawSingleValueRow(visRow, sText_Diff_ExpMult, sText_Diff_ExpMult_Strings[v], selected);
         break;
     }
-    case 5: // PLAYER EVs (Yes/No/No(HP))
+    case 3: //Player items (YES / NO)
     {
-        u8 v = GetSel_Diff_NoEVs();
-        if (v > 2) v = 0;
-        Viewer_DrawSingleValueRow(visRow, sText_Diff_NoEVs, sText_Diff_NoEVs_Strings[v], selected);
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Diff_NoItemPlayer);
+        u8 sel = GetSel_Diff_NoItemPlayer();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "YES"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "NO"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Yes);
+        int xr = GetStringRightAlignXOffset(1, sText_No, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_No);
         break;
     }
-    case 6: // TRAINER SCALING IVs (Off/Scale/Hard)
+    case 4: //Trainer items (YES / NO)
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Diff_NoItemTrainer);
+        u8 sel = GetSel_Diff_NoItemTrainer();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "YES"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "NO"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Yes);
+        int xr = GetStringRightAlignXOffset(1, sText_No, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_No);
+        break;
+    }
+    case 5: //Player IVs (YES/NO/NO(HP))
+    {
+        u8 v = GetSel_Diff_MaxPartyIVs();
+        if (v > 2) v = 0;
+        Viewer_DrawSingleValueRow(visRow, sText_Diff_MaxPartyIVs, sText_Diff_NoEVs_Strings[v], selected);
+        break;
+    }
+    case 6: // TRAINER IVs (OFF/SCALE/HARD)
     {
         u8 v = GetSel_Diff_ScalingIVs();
         if (v > 2) v = 0;
         Viewer_DrawSingleValueRow(visRow, sText_Diff_ScalingIVs, sText_Diff_Scaling_Strings[v], selected);
         break;
     }
-    case 7: // TRAINER SCALING EVs (Off/Scale/Hard)
+    case 7: // PLAYER EVs (Yes/No)
+    {
+
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Diff_NoEVs);
+        u8 sel = GetSel_Diff_NoEVs();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "YES"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "NO"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Yes);
+        int xr = GetStringRightAlignXOffset(1, sText_No, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_No);
+        break;
+    }
+    case 8: // TRAINER EVs (Off/Scale/Hard/Extreme)
     {
         u8 v = GetSel_Diff_ScalingEVs();
-        if (v > 2) v = 0;
+        if (v > 3) v = 0;
         Viewer_DrawSingleValueRow(visRow, sText_Diff_ScalingEVs, sText_Diff_Scaling_Strings[v], selected);
+        break;
+    }
+    case 10: // Escape Rope & Dig (Yes/No)
+    {
+
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Diff_EscapeRopeDig);
+        u8 sel = GetSel_Diff_EscapeRopeDig();
+        const u8 *leftStyle  = (sel == 1) ? sColorRightRed : sColorRightGray; // "YES"
+        const u8 *rightStyle = (sel == 0) ? sColorRightRed : sColorRightGray; // "NO"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Yes);
+        int xr = GetStringRightAlignXOffset(1, sText_No, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_No);
         break;
     }
     default:
@@ -724,26 +923,58 @@ static void Viewer_DrawRow_Page6(u8 visRow, u16 idx)
 
     switch (idx)
     {
-    case 1: // PRICES (Expensive)
+    case 0: //Pokecenter challenge (YES / NO)
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Chk_PkmnCenter);
+        u8 sel = GetSel_Chk_PkmnCenter();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "YES"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "NO"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Yes);
+        int xr = GetStringRightAlignXOffset(1, sText_No, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_No);
+        break;
+    }
+    case 1: //PC Heals (YES / NO)
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Chk_PCHeal);
+        u8 sel = GetSel_Chk_PCHeal();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "YES"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "NO"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_Yes);
+        int xr = GetStringRightAlignXOffset(1, sText_No, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_No);
+        break;
+    }
+    case 2: // PRICES (Expensive)
     {
         u8 v = GetSel_Chk_Expensive(); // 0..3
         Viewer_DrawSingleValueRow(visRow, sText_Chk_Expensive, sText_Chk_Expensive_Strings[v], selected);
         break;
     }
-    case 2: // EVOLUTION LIMIT
+    case 3: // EVOLUTION LIMIT
     {
         u8 v = GetSel_Chk_EvoLimit(); // 0..2
         Viewer_DrawSingleValueRow(visRow, sText_Chk_EvoLimit, sText_Chk_EvoLimit_Strings[v], selected);
         break;
     }
-    case 3: // ONE TYPE CHALLENGE (single-value: OFF or a type name)
+    case 4: // ONE TYPE CHALLENGE (single-value: OFF or a type name)
     {
         u8 v = gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge;
         const u8 *val = (v < 19) ? sTypeNames[v] : sText_TypeOff;
         Viewer_DrawSingleValueRow(visRow, sText_Chk_OneType, val, selected);
         break;
     }
-    case 4: // BASE STAT EQUALIZER
+    case 5: // BASE STAT EQUALIZER
     {
         u8 v = GetSel_Chk_BaseStatEq(); // 0..3
         Viewer_DrawSingleValueRow(visRow, sText_Chk_BaseStatEq, sText_Chk_BaseStatEq_Strings[v], selected);
