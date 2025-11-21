@@ -148,7 +148,7 @@ static const u8 sCreditsText_SurfMons[]                        = _("Surfing Pok√
 static const u8 sCreditsText_slawter666[]                      = _("slawter666");
 static const u8 sCreditsText_wally217[]                        = _("wally-217");
 
-//new ones: andyshrew, nettletOn, tasty, BasedTuxedoMask, Johnna, GoodVibez420, Dante, Bee, Anne-4, Dragon121, goldy, JonTheMoron, k3v
+//new ones: andyshrew, nettletOn, tasty, BasedTuxedoMask, Johnna, GoodVibez420, Dante, Bee, Anne-4, Dragon121, goldy, JonTheMoron, l1ghtt
 static const u8 sCreditsText_andyshrew[]      = _("andyshrew");
 static const u8 sCreditsText_nettletOn[]      = _("nettletOn");
 static const u8 sCreditsText_tasty[]          = _("tasty");
@@ -161,7 +161,7 @@ static const u8 sCreditsText_stingrayanne[]         = _("stingrayanne");
 static const u8 sCreditsText_Dragon121[]       = _("Dragon121");
 static const u8 sCreditsText_goldy[]            = _("Goldy");
 static const u8 sCreditsText_JonTheMoron[]     = _("JonTheMoron");
-static const u8 sCreditsText_k3v[]             = _("k3v");
+static const u8 sCreditsText_l1ghtt[]             = _("l1ghtt");
 
 static const struct CreditsEntry sCreditsEntry_andyshrew = {11, FALSE, sCreditsText_andyshrew};
 static const struct CreditsEntry sCreditsEntry_nettletOn = {11, FALSE, sCreditsText_nettletOn};
@@ -175,7 +175,7 @@ static const struct CreditsEntry sCreditsEntry_stingrayanne = {11, FALSE, sCredi
 static const struct CreditsEntry sCreditsEntry_Dragon121 = {11, FALSE, sCreditsText_Dragon121};
 static const struct CreditsEntry sCreditsEntry_goldy = {11, FALSE, sCreditsText_goldy};
 static const struct CreditsEntry sCreditsEntry_JonTheMoron = {11, FALSE, sCreditsText_JonTheMoron};
-static const struct CreditsEntry sCreditsEntry_k3v = {11, FALSE, sCreditsText_k3v};
+static const struct CreditsEntry sCreditsEntry_l1ghtt = {11, FALSE, sCreditsText_l1ghtt};
 
 
 
@@ -741,7 +741,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     [PAGE_HNS_PLAYTESTERS_11] = {
         &sCreditsEntry_Playtesters,
         &sCreditsEntry_JonTheMoron,
-        &sCreditsEntry_k3v,
+        &sCreditsEntry_l1ghtt,
         _,
         _,
     },
