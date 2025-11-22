@@ -234,7 +234,6 @@ void CreateShinyScriptedMon(u16 species, u8 level, u16 item)
         species = GetSpeciesRandomSeeded(species, TX_RANDOM_T_STATIC, 0);
     if (gSaveBlock1Ptr->tx_Random_Items)
         item = RandomItemId(item);
-    SetNuzlockeChecks();
     ZeroEnemyPartyMons();
 
     u32 otId = gSaveBlock2Ptr->playerTrainerId[0]
@@ -251,7 +250,7 @@ void CreateShinyScriptedMon(u16 species, u8 level, u16 item)
         heldItem[1] = item >> 8;
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem);
     }
-
+    SetNuzlockeChecks();
 }
 
 void ScriptSetMonMoveSlot(u8 monIndex, u16 move, u8 slot)
