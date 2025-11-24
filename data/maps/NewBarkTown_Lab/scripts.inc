@@ -873,12 +873,12 @@ NewBarkTown_Lab_Text_KimonoGirls:
 	.string "I hope you'll carry through it.$"
 
 NewBarkTown_Lab_Text_KimonoWaiting:
-	.string "PROF. ELM: The KIMONO\n"
+	.string "PROF.ELM: The KIMONO\n"
 	.string "GIRLS are waiting for you at\l"
 	.string "the ECRUTEAK DANCE THEATER.$"
 
 NewBarkTown_Lab_Text_League:
-	.string "PROF. ELM: Hahaha...\n"
+	.string "PROF.ELM: Hahaha...\n"
 	.string "Good job!\p"
 	.string "That rare Egg has brought you\n"
 	.string "a lot of trouble, huh?\p"
