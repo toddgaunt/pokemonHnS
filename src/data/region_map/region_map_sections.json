@@ -834,7 +834,7 @@
     },
     {
       "map_section": "MAPSEC_DRAGONS_DEN",
-      "name": "Dragon's Den",
+      "name": "DRAGON'S DEN",
       "x": 12,
       "y": 2,
       "width": 1,
@@ -842,7 +842,7 @@
     },
     {
       "map_section": "MAPSEC_RUINS_OF_ALPH",
-      "name": "Ruins of Alph",
+      "name": "RUINS OF ALPH",
       "x": 6,
       "y": 6,
       "width": 1,

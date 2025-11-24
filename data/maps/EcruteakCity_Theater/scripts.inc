@@ -1024,7 +1024,7 @@ EcruteakCity_Theater_Text_SayoSeen:
 	.string "off the ice by pushing me.\p"
 	.string "I skate in sandals.\n"
 	.string "I am SAYO--the KIMONO GIRL!\p"
-	.string "I listened in the Dragon's Den\n"
+	.string "I listened in the DRAGON'S DEN\n"
 	.string "when you passed the Elder's test.\p"
 	.string "Let me challenge you and your\n"
 	.string "POKéMON!$"
