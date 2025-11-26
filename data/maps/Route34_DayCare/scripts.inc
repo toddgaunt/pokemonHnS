@@ -147,7 +147,7 @@ Route34_DayCare_EventScript_ClerkAfter::
 	end
 
 Route34_DayCare_Text_ClerkBefore:
-	.string "I'm the DAYCARE couple's son.\p"
+	.string "I'm the DAY-CARE couple's son.\p"
 	.string "An ODD EGG was found with a TRAINER's\n"
 	.string "POKéMON, but they didn't want it...\p"
 	.string "I'd offer it to you...\n"
