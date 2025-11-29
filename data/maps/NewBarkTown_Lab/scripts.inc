@@ -880,7 +880,7 @@ NewBarkTown_Lab_Text_KimonoWaiting:
 NewBarkTown_Lab_Text_League:
 	.string "PROF.ELM: Hahaha...\n"
 	.string "Good job!\p"
-	.string "That rare Egg has brought you\n"
+	.string "That rare EGG has brought you\n"
 	.string "a lot of trouble, huh?\p"
 	.string "The KIMONO GIRLS said something\n"
 	.string "about me?\p"
