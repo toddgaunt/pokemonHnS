@@ -978,10 +978,10 @@ EcruteakCity_Theater_Text_ZukiSeen:
 	.string "To bring back {STR_VAR_1}, we\n"
 	.string "needed someone with the right bond\l"
 	.string "with POKéMON.\p"
-	.string "We asked Mr. POKéMON to give this\n"
-	.string "Mystery Egg to\l"
+	.string "We asked MR. POKéMON to give this\n"
+	.string "MYSTERY EGG to\l"
 	.string "whoever showed potential.\p"
-	.string "The Egg went from MR. POKéMON\n"
+	.string "The EGG went from MR. POKéMON\n"
 	.string "to PROF.ELM, then to you.\p"
 	.string "But being pure alone is not enough\n"
 	.string "to face the power of this POKéMON.$"
@@ -1003,7 +1003,7 @@ EcruteakCity_Theater_Text_NaokoSeen:
 	.string "directions.\p"
 	.string "I saw you defeat Team Rocket\n"
 	.string "when KURT was in trouble at\l"
-	.string "the SLOWPOKE Well.\p"
+	.string "the SLOWPOKE WELL.\p"
 	.string "Let me challenge you and your\n"
 	.string "POKéMON!$"
 
@@ -1083,6 +1083,6 @@ EcruteakCity_Theater_Text_ZukiAfterAll:
 	.string "PROF.ELM...$"
 
 EcruteakCity_Theater_Text_KimonoGirlsBeforeBattle:
-	.string "Talk to Zuki in the middle\n"
+	.string "Talk to ZUKI in the middle\n"
 	.string "when you are ready.$"
 
