@@ -303,7 +303,7 @@ OlivineCity_Text_Sailor2:
 	.string "strongest GYM LEADER!\p"
 	.string "Hah! That's a load of crud.\p"
 	.string "There's no way PRYCE could\n"
-	.string "hurt JASMINE's Steel-type\l"
+	.string "hurt JASMINE's STEEL-type\l"
 	.string "POKéMON!\p"
 	.string "Bureaucracy if you ask me.\p"
 	.string "She's something to be feared,\n"
